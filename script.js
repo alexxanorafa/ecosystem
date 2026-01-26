@@ -7,7 +7,7 @@ const APPS = [
   { name: "Alquimia do Tempo", url: "https://alexxanorafa.github.io/Alquimia-do-Tempo/" },
   { name: "Alquimia dos Sentimentos", url: "https://alexxanorafa.github.io/Alquimia-dos-Sentimentos/" },
   { name: "Animais de Poder", url: "https://alexxanorafa.github.io/Animais-de-Poder/" },
-  { name: "ANIMA", url: "https://alexxanorafa.github.io/ANIMA/" },
+  { name: "ANIMA I", url: "https://alexxanorafa.github.io/ANIMA/" },
   { name: "ANIMA II", url: "https://alexxanorafa.github.io/ANIMA-II/" },
   { name: "Anéis da Sabedoria", url: "https://alexxanorafa.github.io/Aneis_da_Sabedoria/" },
   { name: "Árvore da Vida", url: "https://alexxanorafa.github.io/Arvore-da-Vida/" },
@@ -46,11 +46,12 @@ const APPS = [
   { name: "Tempo e Sonhos", url: "https://alexxanorafa.github.io/Tempo_e_Sonhos/" },
   { name: "The Da Vinci Code", url: "https://alexxanorafa.github.io/The-Da-Vinci-Code/" },
   { name: "Velvet Quantum", url: "https://alexxanorafa.github.io/Velvet-Quantum/" },
-  { name: "Vitruvian Resonance", url: "https://alexxanorafa.github.io/Vitruvian-Resonance/" },
+  { name: "Vitruvian Resonance I", url: "https://alexxanorafa.github.io/Vitruvian-Resonance/" },
   { name: "Vitruvian Resonance II", url: "https://alexxanorafa.github.io/Vitruvian-Resonance-II/" },
-  { name: "Whispering Shadows", url: "https://alexxanorafa.github.io/Whispering-Shadows/" },
+  { name: "Whispering Shadows I", url: "https://alexxanorafa.github.io/Whispering-Shadows/" },
   { name: "Whispering Shadows II", url: "https://alexxanorafa.github.io/Whispering-Shadows-2/" },
   { name: "Whispering Shadows III", url: "https://alexxanorafa.github.io/Whispering-Shadows-3/" },
+  { name: "Whispering Shadows IV", url: "https://alexxanorafa.github.io/Whispering-Shadows-IV/" },
   { name: "Xamanismo Animal", url: "https://alexxanorafa.github.io/Xamanismo-Animal/" }
 ];
 
@@ -361,5 +362,6 @@ function animate() {
 
 
 animate();
+
 
 
