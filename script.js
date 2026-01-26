@@ -11,6 +11,7 @@ const APPS = [
   { name: "ANIMA II", url: "https://alexxanorafa.github.io/ANIMA-II/" },
   { name: "Anéis da Sabedoria", url: "https://alexxanorafa.github.io/Aneis_da_Sabedoria/" },
   { name: "Árvore da Vida", url: "https://alexxanorafa.github.io/Arvore-da-Vida/" },
+  { name: "Athanor", url: "https://alexxanorafa.github.io/Athanor/" },
   { name: "Biblioteca Onírica", url: "https://alexxanorafa.github.io/Biblioteca-Onirica/" },
   { name: "Búzios", url: "https://alexxanorafa.github.io/Buzios/" },
   { name: "Cartas de Sibila", url: "https://alexxanorafa.github.io/Cartas-de-Sibila/" },
@@ -362,6 +363,7 @@ function animate() {
 
 
 animate();
+
 
 
 
