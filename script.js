@@ -18,6 +18,7 @@ const APPS = [
   { name: "Entrecamadas", url: "https://alexxanorafa.github.io/Entrecamadas-Telepatia-Proposito/" },
   { name: "Experiência Sensorial", url: "https://alexxanorafa.github.io/Experiencia-Sensorial/" },
   { name: "I Ching Virtual", url: "https://alexxanorafa.github.io/I-Ching-Virtual/" },
+  { name: "Intervalo de Luz", url: "https://alexxanorafa.github.io/Intervalo-de-Luz/" },
   { name: "Jornada Arquetípica", url: "https://alexxanorafa.github.io/Jornada-Arquetipica/" },
   { name: "Jornada Mitológica", url: "https://alexxanorafa.github.io/Jornadas-Mitologica/" },
   { name: "Livro das Sombras", url: "https://alexxanorafa.github.io/Livro-das-Sombras/" },
@@ -30,6 +31,7 @@ const APPS = [
   { name: "Oráculo Numerológico", url: "https://alexxanorafa.github.io/Oraculo-Numerologico/" },
   { name: "Pêndulo Divinatório", url: "https://alexxanorafa.github.io/Pendulo-Divinatorio/" },
   { name: "Portal das Almas", url: "https://alexxanorafa.github.io/Portal-das-Almas/" },
+  { name: "Posicionamento dos Astros", url: "https://alexxanorafa.github.io/posicionamentodosastros/" },
   { name: "Potencial Coletivo", url: "https://alexxanorafa.github.io/Potencial-Coletivo/" },
   { name: "PROJECT AETHER", url: "https://alexxanorafa.github.io/PROJECT-AETHER/" },
   { name: "Quantum Oracle", url: "https://alexxanorafa.github.io/Quantum-Oracle/" },
@@ -358,3 +360,4 @@ function animate() {
 
 
 animate();
+
