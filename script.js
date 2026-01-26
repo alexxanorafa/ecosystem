@@ -44,9 +44,10 @@ const APPS = [
   { name: "The Da Vinci Code", url: "https://alexxanorafa.github.io/The-Da-Vinci-Code/" },
   { name: "Velvet Quantum", url: "https://alexxanorafa.github.io/Velvet-Quantum/" },
   { name: "Vitruvian Resonance", url: "https://alexxanorafa.github.io/Vitruvian-Resonance/" },
+  { name: "Vitruvian Resonance II", url: "https://alexxanorafa.github.io/Vitruvian-Resonance-II/" },
   { name: "Whispering Shadows", url: "https://alexxanorafa.github.io/Whispering-Shadows/" },
-  { name: "Whispering Shadows 2", url: "https://alexxanorafa.github.io/Whispering-Shadows-2/" },
-  { name: "Whispering Shadows 3", url: "https://alexxanorafa.github.io/Whispering-Shadows-3/" },
+  { name: "Whispering Shadows II", url: "https://alexxanorafa.github.io/Whispering-Shadows-2/" },
+  { name: "Whispering Shadows III", url: "https://alexxanorafa.github.io/Whispering-Shadows-3/" },
   { name: "Xamanismo Animal", url: "https://alexxanorafa.github.io/Xamanismo-Animal/" }
 ];
 
@@ -354,5 +355,6 @@ function animate() {
 
     renderer.render(scene, camera);
 }
+
 
 animate();
