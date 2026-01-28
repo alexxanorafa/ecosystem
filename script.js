@@ -26,6 +26,7 @@ const APPS = [
   { name: "Jornada Mitológica", url: "https://alexxanorafa.github.io/Jornadas-Mitologica/" },
   { name: "Livro das Sombras", url: "https://alexxanorafa.github.io/Livro-das-Sombras/" },
   { name: "Magia das Cores", url: "https://alexxanorafa.github.io/Magia-das-Cores/" },
+  { name: "MBA", url: "https://alexxanorafa.github.io/mba/" },
   { name: "Murmúrios do Destino", url: "https://alexxanorafa.github.io/Murmurios-do-Destino/" },
   { name: "Nexus", url: "https://alexxanorafa.github.io/Nexus/" },
   { name: "O Construtor do Destino", url: "https://alexxanorafa.github.io/O-Construtor-do-Destino/" },
@@ -364,6 +365,7 @@ function animate() {
 
 
 animate();
+
 
 
 
