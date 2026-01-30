@@ -20,7 +20,7 @@ const APPS = [
   { name: "ELIFOOT", url: "https://alexxanorafa.github.io/elifoot/" },
   { name: "Entrecamadas", url: "https://alexxanorafa.github.io/Entrecamadas-Telepatia-Proposito/" },
   { name: "Experiência Sensorial", url: "https://alexxanorafa.github.io/Experiencia-Sensorial/" },
-  { name: "I Ching Virtual", url: "https://alexxanorafa.github.io/I-Ching-Virtual/" },
+  { name: "I Ching", url: "https://alexxanorafa.github.io/I-Ching/" },
   { name: "Intervalo de Luz", url: "https://alexxanorafa.github.io/Intervalo-de-Luz/" },
   { name: "Jornada Arquetípica", url: "https://alexxanorafa.github.io/Jornada-Arquetipica/" },
   { name: "Jornada Mitológica", url: "https://alexxanorafa.github.io/Jornadas-Mitologica/" },
@@ -365,6 +365,7 @@ function animate() {
 
 
 animate();
+
 
 
 
