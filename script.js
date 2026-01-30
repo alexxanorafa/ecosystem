@@ -10,7 +10,7 @@ const APPS = [
   { name: "ANIMA I", url: "https://alexxanorafa.github.io/ANIMA/" },
   { name: "ANIMA II", url: "https://alexxanorafa.github.io/ANIMA-II/" },
   { name: "Anéis da Sabedoria", url: "https://alexxanorafa.github.io/Aneis_da_Sabedoria/" },
-  { name: "Anéis da Sabedoria Experiência Erudita", url: "https://alexxanorafa.github.io/Aneis-da-Sabedoria-Experiencia-Erudita/" },
+  { name: "Anéis | Experiência Erudita", url: "https://alexxanorafa.github.io/Aneis-da-Sabedoria-Experiencia-Erudita/" },
   { name: "Árvore da Vida", url: "https://alexxanorafa.github.io/Arvore-da-Vida/" },
   { name: "Athanor", url: "https://alexxanorafa.github.io/Athanor/" },
   { name: "Biblioteca Onírica", url: "https://alexxanorafa.github.io/Biblioteca-Onirica/" },
@@ -366,6 +366,7 @@ function animate() {
 
 
 animate();
+
 
 
 
