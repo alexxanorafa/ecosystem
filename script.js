@@ -43,6 +43,7 @@ const APPS = [
   { name: "Runas Celtas", url: "https://alexxanorafa.github.io/Runas-Celtas/" },
   { name: "Runas Estelares", url: "https://alexxanorafa.github.io/Runas-Estelares/" },
   { name: "Runas Nórdicas", url: "https://alexxanorafa.github.io/Runas-do-Destino/" },
+  { name: "Sibila Cósmica", url: "https://alexxanorafa.github.io/Sibila-Cosmica/" },
   { name: "Simulador Quântico", url: "https://alexxanorafa.github.io/Simulador-Quantico/" },
   { name: "Tabuleiro Ouija", url: "https://alexxanorafa.github.io/Tabuleiro-Ouija/" },
   { name: "Tarô de Marselha", url: "https://alexxanorafa.github.io/TarodeMarselha/" },
@@ -366,6 +367,7 @@ function animate() {
 
 
 animate();
+
 
 
 
