@@ -4,20 +4,21 @@
 
 const APPS = [
   { name: "Almas Conectadas", url: "https://alexxanorafa.github.io/Almas-Conectadas/" },
+  { name: "Alquimia de Sentimentos", url: "https://alexxanorafa.github.io/Alquimia-dos-Sentimentos/" },
   { name: "Alquimia do Tempo", url: "https://alexxanorafa.github.io/Alquimia-do-Tempo/" },
   { name: "Alquimia Social", url: "https://alexxanorafa.github.io/Alquimia-Social/" },
-  { name: "Alquimia dos Sentimentos", url: "https://alexxanorafa.github.io/Alquimia-dos-Sentimentos/" },
   { name: "Animais de Poder", url: "https://alexxanorafa.github.io/Animais-de-Poder/" },
   { name: "ANIMA I", url: "https://alexxanorafa.github.io/ANIMA/" },
   { name: "ANIMA II", url: "https://alexxanorafa.github.io/ANIMA-II/" },
+  { name: "Anéis", url: "https://alexxanorafa.github.io/Aneis-da-Sabedoria-Experiencia-Erudita/" },
   { name: "Anéis da Sabedoria", url: "https://alexxanorafa.github.io/Aneis_da_Sabedoria/" },
-  { name: "Anéis | Experiência Erudita", url: "https://alexxanorafa.github.io/Aneis-da-Sabedoria-Experiencia-Erudita/" },
   { name: "Árvore da Vida", url: "https://alexxanorafa.github.io/Arvore-da-Vida/" },
   { name: "Athanor", url: "https://alexxanorafa.github.io/Athanor/" },
   { name: "BaZi Master", url: "https://alexxanorafa.github.io/BaZi-Master/" },
   { name: "Biblioteca Onírica", url: "https://alexxanorafa.github.io/Biblioteca-Onirica/" },
   { name: "Búzios", url: "https://alexxanorafa.github.io/Buzios/" },
   { name: "Cartas de Sibila", url: "https://alexxanorafa.github.io/Cartas-de-Sibila/" },
+  { name: "Construtor do Destino", url: "https://alexxanorafa.github.io/O-Construtor-do-Destino/" },
   { name: "Do you love me?", url: "https://alexxanorafa.github.io/Do-you-love-me/" },
   { name: "ECO-SAPIENS", url: "https://alexxanorafa.github.io/ECO-SAPIENS/" },
   { name: "ELIFOOT", url: "https://alexxanorafa.github.io/elifoot/" },
@@ -32,7 +33,6 @@ const APPS = [
   { name: "MBA", url: "https://alexxanorafa.github.io/mba/" },
   { name: "Murmúrios do Destino", url: "https://alexxanorafa.github.io/Murmurios-do-Destino/" },
   { name: "Nexus", url: "https://alexxanorafa.github.io/Nexus/" },
-  { name: "O Construtor do Destino", url: "https://alexxanorafa.github.io/O-Construtor-do-Destino/" },
   { name: "Oráculo das Pedras", url: "https://alexxanorafa.github.io/Oraculo-das-Pedras/" },
   { name: "Oráculo dos Deuses", url: "https://alexxanorafa.github.io/Oraculo-dos-Deuses/" },
   { name: "Oráculo Numerológico", url: "https://alexxanorafa.github.io/Oraculo-Numerologico/" },
@@ -369,6 +369,7 @@ function animate() {
 
 
 animate();
+
 
 
 
