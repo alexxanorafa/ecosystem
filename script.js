@@ -5,6 +5,7 @@
 const APPS = [
   { name: "Almas Conectadas", url: "https://alexxanorafa.github.io/Almas-Conectadas/" },
   { name: "Alquimia do Tempo", url: "https://alexxanorafa.github.io/Alquimia-do-Tempo/" },
+  { name: "Alquimia Social", url: "https://alexxanorafa.github.io/Alquimia-Social/" },
   { name: "Alquimia dos Sentimentos", url: "https://alexxanorafa.github.io/Alquimia-dos-Sentimentos/" },
   { name: "Animais de Poder", url: "https://alexxanorafa.github.io/Animais-de-Poder/" },
   { name: "ANIMA I", url: "https://alexxanorafa.github.io/ANIMA/" },
@@ -367,6 +368,7 @@ function animate() {
 
 
 animate();
+
 
 
 
