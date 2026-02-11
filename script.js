@@ -14,6 +14,7 @@ const APPS = [
   { name: "Anéis | Experiência Erudita", url: "https://alexxanorafa.github.io/Aneis-da-Sabedoria-Experiencia-Erudita/" },
   { name: "Árvore da Vida", url: "https://alexxanorafa.github.io/Arvore-da-Vida/" },
   { name: "Athanor", url: "https://alexxanorafa.github.io/Athanor/" },
+  { name: "BaZi Master", url: "https://alexxanorafa.github.io/BaZi-Master/" },
   { name: "Biblioteca Onírica", url: "https://alexxanorafa.github.io/Biblioteca-Onirica/" },
   { name: "Búzios", url: "https://alexxanorafa.github.io/Buzios/" },
   { name: "Cartas de Sibila", url: "https://alexxanorafa.github.io/Cartas-de-Sibila/" },
@@ -368,6 +369,7 @@ function animate() {
 
 
 animate();
+
 
 
 
