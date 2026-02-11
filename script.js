@@ -38,7 +38,7 @@ const APPS = [
   { name: "Oráculo Numerológico", url: "https://alexxanorafa.github.io/Oraculo-Numerologico/" },
   { name: "Pêndulo Divinatório", url: "https://alexxanorafa.github.io/Pendulo-Divinatorio/" },
   { name: "Portal das Almas", url: "https://alexxanorafa.github.io/Portal-das-Almas/" },
-  { name: "Posicionamento dos Astros", url: "https://alexxanorafa.github.io/posicionamentodosastros/" },
+  //{ name: "Posicionamento dos Astros", url: "https://alexxanorafa.github.io/posicionamentodosastros/" },
   { name: "Potencial Coletivo", url: "https://alexxanorafa.github.io/Potencial-Coletivo/" },
   { name: "PROJECT AETHER", url: "https://alexxanorafa.github.io/PROJECT-AETHER/" },
   { name: "Quantum Oracle", url: "https://alexxanorafa.github.io/Quantum-Oracle/" },
@@ -55,10 +55,10 @@ const APPS = [
   { name: "Velvet Quantum", url: "https://alexxanorafa.github.io/Velvet-Quantum/" },
   { name: "Vitruvian Resonance I", url: "https://alexxanorafa.github.io/Vitruvian-Resonance/" },
   { name: "Vitruvian Resonance II", url: "https://alexxanorafa.github.io/Vitruvian-Resonance-II/" },
-  { name: "Whispering Shadows I", url: "https://alexxanorafa.github.io/Whispering-Shadows/" },
-  { name: "Whispering Shadows II", url: "https://alexxanorafa.github.io/Whispering-Shadows-2/" },
-  { name: "Whispering Shadows III", url: "https://alexxanorafa.github.io/Whispering-Shadows-3/" },
-  { name: "Whispering Shadows IV", url: "https://alexxanorafa.github.io/Whispering-Shadows-IV/" },
+ // { name: "Whispering Shadows I", url: "https://alexxanorafa.github.io/Whispering-Shadows/" },
+//  { name: "Whispering Shadows II", url: "https://alexxanorafa.github.io/Whispering-Shadows-2/" },
+//  { name: "Whispering Shadows III", url: "https://alexxanorafa.github.io/Whispering-Shadows-3/" },
+ // { name: "Whispering Shadows IV", url: "https://alexxanorafa.github.io/Whispering-Shadows-IV/" },
   { name: "Xamanismo Animal", url: "https://alexxanorafa.github.io/Xamanismo-Animal/" }
 ];
 
@@ -369,6 +369,7 @@ function animate() {
 
 
 animate();
+
 
 
 
