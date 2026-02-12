@@ -3,6 +3,7 @@
 // =========================
 
 const APPS = [
+  { name: "AETHER", url: "https://alexxanorafa.github.io/PROJECT-AETHER/" },
   { name: "Almas Conectadas", url: "https://alexxanorafa.github.io/Almas-Conectadas/" },
   { name: "Alquimia de Sentimentos", url: "https://alexxanorafa.github.io/Alquimia-dos-Sentimentos/" },
   { name: "Alquimia do Tempo", url: "https://alexxanorafa.github.io/Alquimia-do-Tempo/" },
@@ -36,18 +37,17 @@ const APPS = [
   { name: "Oráculo das Pedras", url: "https://alexxanorafa.github.io/Oraculo-das-Pedras/" },
   { name: "Oráculo dos Deuses", url: "https://alexxanorafa.github.io/Oraculo-dos-Deuses/" },
   { name: "Oráculo Numerológico", url: "https://alexxanorafa.github.io/Oraculo-Numerologico/" },
+  { name: "Ouija", url: "https://alexxanorafa.github.io/Tabuleiro-Ouija/" },
   { name: "Pêndulo Divinatório", url: "https://alexxanorafa.github.io/Pendulo-Divinatorio/" },
   { name: "Portal das Almas", url: "https://alexxanorafa.github.io/Portal-das-Almas/" },
   //{ name: "Posicionamento dos Astros", url: "https://alexxanorafa.github.io/posicionamentodosastros/" },
   { name: "Potencial Coletivo", url: "https://alexxanorafa.github.io/Potencial-Coletivo/" },
-  { name: "PROJECT AETHER", url: "https://alexxanorafa.github.io/PROJECT-AETHER/" },
   { name: "Quantum Oracle", url: "https://alexxanorafa.github.io/Quantum-Oracle/" },
   { name: "Runas Celtas", url: "https://alexxanorafa.github.io/Runas-Celtas/" },
   { name: "Runas Estelares", url: "https://alexxanorafa.github.io/Runas-Estelares/" },
   { name: "Runas Nórdicas", url: "https://alexxanorafa.github.io/Runas-do-Destino/" },
   { name: "Sibila Cósmica", url: "https://alexxanorafa.github.io/Sibila-Cosmica/" },
   { name: "Simulador Quântico", url: "https://alexxanorafa.github.io/Simulador-Quantico/" },
-  { name: "Tabuleiro Ouija", url: "https://alexxanorafa.github.io/Tabuleiro-Ouija/" },
   { name: "Tarô de Marselha", url: "https://alexxanorafa.github.io/TarodeMarselha/" },
   { name: "Tasseografia", url: "https://alexxanorafa.github.io/Tasseografia/" },
   { name: "Tempo e Sonhos", url: "https://alexxanorafa.github.io/Tempo_e_Sonhos/" },
@@ -369,6 +369,7 @@ function animate() {
 
 
 animate();
+
 
 
 
