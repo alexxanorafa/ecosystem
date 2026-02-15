@@ -158,39 +158,86 @@ container.appendChild(labelLayer);
 
 
 // =========================
-// DISTRIBUIÇÃO EM ANÉIS
+// VARIÁVEIS PARA AS POSIÇÕES ORIGINAIS (SEM ESCALA)
 // =========================
+let originalPositions = [];
 
-function distributeApps(nodes) {
+
+// =========================
+// GERA AS POSIÇÕES ORIGINAIS (DISTRIBUIÇÃO EM ANÉIS COM PARÂMETROS FIXOS)
+// =========================
+function generateOriginalPositions(nodes) {
     const total = nodes.length;
     const rings = Math.ceil(Math.sqrt(total));
     const radiusStep = 55;
     const baseZ = -40;
 
     let index = 0;
+    const positions = [];
 
     for (let r = 0; r < rings; r++) {
         const itemsInRing = Math.ceil((2 * Math.PI * (r + 1)) / 0.55);
-        const radius = (r + 1) * radiusStep;
+        const ringRadius = (r + 1) * radiusStep;
 
         for (let i = 0; i < itemsInRing && index < total; i++, index++) {
             const angle = (i / itemsInRing) * Math.PI * 2;
 
-            const x = radius * Math.cos(angle);
-            const y = radius * Math.sin(angle) * 0.55;
+            const x = ringRadius * Math.cos(angle);
+            const y = ringRadius * Math.sin(angle) * 0.55;
             const z = baseZ + r * 8;
 
-            nodes[index].position.set(x, y, z);
-            nodes[index].userData.basePosition = nodes[index].position.clone();
+            positions.push(new THREE.Vector3(x, y, z));
         }
     }
+    return positions;
 }
 
 
 // =========================
-// CRIAR NÓS E LABELS
+// APLICA ESCALA GLOBAL PARA QUE TODAS AS APPS FIQUEM DENTRO DO ECRÃ
 // =========================
+function applyGlobalScale() {
+    if (originalPositions.length === 0) return;
 
+    // Calcula as dimensões do frustum à distância da câmara (260)
+    const fov = 55 * Math.PI / 180;
+    const tanHalfFov = Math.tan(fov / 2);
+    const aspect = window.innerWidth / window.innerHeight;
+    const Tx = tanHalfFov * aspect;          // metade da largura à distância 1
+    const Ty = tanHalfFov;                   // metade da altura à distância 1
+
+    const cameraDist = 260;
+    const halfWidth = Tx * cameraDist;
+    const halfHeight = Ty * cameraDist;
+
+    // Encontra o maior raio no plano XZ (considerando rotação em Y) e a maior |y|
+    let maxRadiusXZ = 0;
+    let maxY = 0;
+    originalPositions.forEach(pos => {
+        const r = Math.sqrt(pos.x * pos.x + pos.z * pos.z);
+        if (r > maxRadiusXZ) maxRadiusXZ = r;
+        if (Math.abs(pos.y) > maxY) maxY = Math.abs(pos.y);
+    });
+
+    // Factores de escala para caber na largura e na altura
+    const scaleXZ = halfWidth / maxRadiusXZ;
+    const scaleY = halfHeight / maxY;
+    // Usamos o menor factor para garantir que ambos os eixos cabem, com uma margem de 0.9
+    const scale = Math.min(scaleXZ, scaleY) * 0.9;
+
+    // Aplica a escala a todos os nós e actualiza basePosition
+    appNodes.forEach((node, idx) => {
+        const original = originalPositions[idx];
+        const scaledPos = original.clone().multiplyScalar(scale);
+        node.position.copy(scaledPos);
+        node.userData.basePosition.copy(scaledPos);
+    });
+}
+
+
+// =========================
+// CRIA OS NÓS E AS LABELS
+// =========================
 APPS.forEach((app) => {
     const node = new THREE.Object3D();
     node.userData = {
@@ -199,7 +246,8 @@ APPS.forEach((app) => {
             (Math.random() - 0.5) * 0.08,
             (Math.random() - 0.5) * 0.08
         ),
-        app
+        app,
+        basePosition: new THREE.Vector3()
     };
     scene.add(node);
     appNodes.push(node);
@@ -223,7 +271,12 @@ APPS.forEach((app) => {
     appLabels.push(label);
 });
 
-distributeApps(appNodes);
+
+// =========================
+// INICIALIZA AS POSIÇÕES (ORIGINAIS E ESCALADAS)
+// =========================
+originalPositions = generateOriginalPositions(appNodes);
+applyGlobalScale();
 
 
 // =========================
@@ -253,13 +306,16 @@ window.addEventListener("mousemove", (event) => {
 
 
 // =========================
-// RESIZE
+// RESIZE (actualiza câmara, renderer e reaplica a escala)
 // =========================
 
 window.addEventListener("resize", () => {
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
+
+    // Reaplica a escala com as novas dimensões do ecrã
+    applyGlobalScale();
 });
 
 
@@ -331,7 +387,7 @@ function animate() {
 
         node.position.addScaledVector(data.velocity, delta * 60);
 
-        // Projeção 3D -> 2D para labels
+        // Projecção 3D -> 2D para labels
         const label = appLabels[idx];
         const projected = node.position.clone();
         projected.project(camera);
@@ -367,20 +423,4 @@ function animate() {
     renderer.render(scene, camera);
 }
 
-
 animate();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
